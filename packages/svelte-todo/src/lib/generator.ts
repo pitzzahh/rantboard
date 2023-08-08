@@ -2,12 +2,6 @@ import { nanoid } from 'nanoid';
 import { faker } from '@faker-js/faker';
 import { userStore, todoStore } from './stores';
 
-enum Status {
-  Pending = 'pending',
-  InProgress = 'in-progress',
-  Done = 'done',
-}
-
 const generateUser = (): User => {
   return {
     id: nanoid(),

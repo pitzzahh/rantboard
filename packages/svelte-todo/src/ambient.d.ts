@@ -16,6 +16,12 @@ type Todo = {
     updatedAt?: Date;
 };
 
+enum Status {
+    Pending = 'pending',
+    InProgress = 'in-progress',
+    Done = 'done',
+}
+
 type TodoCreate = Omit<Todo, 'id' | 'createdAt' | 'updatedAt'>;
 type TodoUpdate = Partial<TodoCreate> & Pick<Todo, 'id' | 'user'>;
 type UserCreate = Omit<User, 'id'>;
