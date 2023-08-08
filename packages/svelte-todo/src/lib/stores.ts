@@ -1,5 +1,4 @@
 import { derived, get, writable } from 'svelte/store';
-import type { Todo, TodoCreate, TodoUpdate, User, UserCreate } from './types';
 import { nanoid } from 'nanoid';
 
 const users = writable<User[]>([]);

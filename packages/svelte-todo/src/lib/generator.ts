@@ -1,4 +1,3 @@
-import type { Todo, TodoCreate, User } from './types';
 import { nanoid } from 'nanoid';
 import { faker } from '@faker-js/faker';
 import { userStore, todoStore } from './stores';

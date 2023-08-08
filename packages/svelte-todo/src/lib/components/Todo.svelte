@@ -1,6 +1,5 @@
 <script lang="ts">
   import { formatRelative, subDays } from 'date-fns';
-  import type { Todo } from '$lib/types';
   import { getUser } from '$lib/stores';
 
   export let todo: Todo;
