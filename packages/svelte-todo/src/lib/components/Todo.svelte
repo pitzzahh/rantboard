@@ -5,7 +5,7 @@
   export let todo: Todo;
 </script>
 
-<div class="flex flex-col p-5 rounded-full shadow-lg shadow-gray-400">
+<div class="flex flex-col m-2 p-5 rounded-2xl shadow-lg shadow-gray-400">
   <div class="text-left text-lg">{todo.title}</div>
   <div class="flex flex-row">
     <span class="flex-1 basis-10/12 pt-5"
