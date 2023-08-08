@@ -43,7 +43,7 @@
 <div class="flex flex-col md:flex-row">
   <div class="basis-1/3 border-red-500 border">
     <div class="flex flex-col">
-      <h1 class="text-center">Pending</h1>
+      <h1 class="heading">Pending</h1>
     </div>
     <div>
       {#each $todosPending as todo}
@@ -53,7 +53,7 @@
   </div>
   <div class="basis-1/3 border-red-500 border">
     <div class="flex flex-col">
-      <h1 class="text-center">In Progress</h1>
+      <h1 class="heading">In Progress</h1>
     </div>
     <div>
       {#each $todosInProgress as todo}
@@ -63,7 +63,7 @@
   </div>
   <div class="basis-1/3 border-red-500 border">
     <div class="flex flex-col">
-      <h1 class="text-center">Done</h1>
+      <h1 class="heading">Done</h1>
     </div>
     <div>
       {#each $todosDone as todo}
@@ -76,3 +76,9 @@
 <p>
   Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
 </p>
+
+<style>
+  .heading {
+    @apply text-center text-[1.5rem] font-bold text-slate-400;
+  }
+</style>
